@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  python-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python-env
+    container_name: python-env
+    volumes:
+      - ./:/home/root/workspace
+    stdin_open: true
+    tty: true
+    
